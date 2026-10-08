@@ -27,7 +27,7 @@ class _HamsterGachaState extends State<HamsterGacha> {
   Future<void> gacha() async {
     setState(() => loading = true);
     for (int i = 0; i < 10; i++) {
-      await Future.delayed(const Duration(milliseconds: 50));
+      await Future.delayed(const Duration(milliseconds: 100));
       setState(() => e = (e + 1) % emojis.length);
     }
     setState(() {
