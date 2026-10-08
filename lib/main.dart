@@ -39,7 +39,13 @@ class _HamsterGachaState extends State<HamsterGacha> {
   @override
   Widget build(BuildContext context) => Scaffold(
     backgroundColor: Colors.black,
-    appBar: AppBar(title: const Text('🌏 Random Planet ☀️')),
+    appBar: AppBar(
+      backgroundColor: Colors.black,
+      title: const Text(
+        '🌏 Random Planet ☀️',
+        style: TextStyle(color: Colors.white),
+      ),
+    ),
     body: Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
